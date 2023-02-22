@@ -1,0 +1,62 @@
+.third-input {
+    height: 1.9rem;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.third-label {
+    margin: 0.5rem 0;
+}
+
+.small {
+    width: 1.5rem;
+}
+
+
+/* ------------------------ */
+
+#third-page {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 2rem 4rem;
+    display: none;
+}
+
+.third-page-header {
+    text-align: center;
+}
+
+
+.company-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-profile, .company-address, .company-details, .company-contact, .brand-names-info, .brand-names-prev, .brand-names-header, .brand-names-prev-header {
+    margin-top: 2rem;
+}
+
+.company-ceo__label-wrapper, .company-ceo__input-wrapper, .company-contact__label-wrapper, .company-contact__input-wrapper {
+    display: grid;
+    grid-template-columns: 25% 35% 5% auto;
+    column-gap: .5rem;
+}
+
+.company-address-wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% auto;
+    column-gap: 0.5rem;
+}
+
+.company-address > .bottom-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-names-input-row, .brand-names-prev-input-row {
+    display: flex;
+}
