@@ -8,7 +8,11 @@ var fourth = document.getElementById('fourth-page');
 let page = 1;
 
 prev.addEventListener('click', function() {
-    page--;
+    if (page > 1) {
+        page--;
+    } else {
+        alert('You are on the first page.');
+    }
 
     if (page == 1) {
         first.style.display = 'block';
@@ -37,7 +41,11 @@ prev.addEventListener('click', function() {
 
 next.addEventListener('click', function() {
         
-        page++;
+        if (page < 4) {
+            page++;
+        } else {
+            alert('You are on the last page.');
+        }
 
         if (page == 1) {
             first.style.display = 'block';
