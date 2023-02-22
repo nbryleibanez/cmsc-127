@@ -4,25 +4,35 @@
     border: 1px solid grey;
 }
 
+.third-input:hover {
+    border: 1px solid #313131;
+}
+
 .third-label {
     margin: 0.5rem 0;
 }
 
-.small {
-    width: 1.5rem;
+.section {
+    padding: 1rem;
+    border-radius: 10px;
+    transition: 175ms ease-in-out;
 }
 
+.section:hover{
+    background-color: #d3e1e7;
+}
 
 /* ------------------------ */
 
 #third-page {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     background-color: white;
+    min-width: 700px;
     width: 60%;
     margin: 0 auto;
     margin-top: 2rem;
     border-radius: 10px;
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
     display: none;
 }
 
@@ -36,8 +46,8 @@
     flex-direction: column;
 }
 
-.company-profile, .company-address, .company-details, .company-contact, .brand-names-info, .brand-names-prev, .brand-names-header, .brand-names-prev-header {
-    margin-top: 2rem;
+.company-profile, .company-address, .company-details, .company-contact, .brand-names-info, .brand-names, .brand-names-prev, .brand-names-header, .brand-names-prev-header, .control-wrapper {
+    margin-top: .5rem;
 }
 
 .company-ceo__label-wrapper, .company-ceo__input-wrapper, .company-contact__label-wrapper, .company-contact__input-wrapper {
@@ -57,6 +67,13 @@
     flex-direction: column;
 }
 
+.brand-names-header, .brand-names-prev-header {
+    margin-bottom: 2rem;
+}
+
 .brand-names-input-row, .brand-names-prev-input-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: 5% auto 20% 4% 4% 4% 4% 4% 4% 4%;
+    column-gap: 0.5rem;
+    margin-top: 0.5rem;
 }
