@@ -15,36 +15,41 @@
 
     <div id="first-page">
         <!-- header -->
-        <header style="text-align: right">
-            ____________ <br>
-            Date
+        <header>
+            <div id="form-date">
+                <input type="date"> <br> Date </input>
+            </div>
+
+            <br> <b> The Board of Trustees </b>
+            <br> Company A
+            <br> Company A Complex
+            <br> Company A Address <br>
+
+            <br> Gentlemen: <br>
+            <br> <p> We would like to apply for membership at <b> Company A Export Federation </b> as a: </p>
         </header>
-
-        <br> <b> The Board of Trustees</b>
-        <br> Company A
-        <br> Company A Complex
-        <br> Company A Address <br>
         
-        <br> Gentlemen:
-            <p> We would like to apply for membership at <b>Company A Export Federation</b> as a: </p>
-
         <!-- regular member -->
-        <p> __________ <b> Regular Member </b> </p>
-        <i> Qualifications: </i>
-            <p>
-                1. Registered exporter of goods and/or services. <br>
-                2. In operation for at least one year. <br>
-                third. Sponsored by any member of the Board of Trustees. <br>
-                4. No serious derogatory information about them supplied by reliable sources. <br>
-            </p>
+        <div id="regular-member"> <br>
+            <input type="text"> </input> 
+                <label class="role-member"> Regular Member </label> <br>
+            <br> <i> Qualifications: </i>
+            <ol type="1">
+                <li> Registered exporter of goods and/or services. </li>
+                <li> In operation for at least one year. </li>
+                <li> Sponsored by any member of the Board of Trustees. </li>
+                <li> No serious derogatory information about them supplied by reliable sources. </li>
+            </ol>
+        </div>
 
         <!-- associate member -->
-        <p> __________ <b> Associate Member </b> </p>
-        <i> Qualifications: </i>
-            <p>
-                <ol type="1">
+        <div id="associate-member">
+            <input type="text"> </input> 
+                <label class="role-member"> Associate Member </label> <br>
+            <br> <i> Qualifications: </i>
+            <ol type="1">
                 <li> Companies other than direct exporters that contribute to Philippine exports such as: </li>
-                    <ol type="a">
+                    <ol id="companies" type="a">
                         <li> Banks </li>
                         <li> Shipping Companies </li>
                         <li> Airline Companies </li>
@@ -57,28 +62,36 @@
                         <li> Printers </li>
                         <li> Hotels </li>
                         <li> Trading companies </li>
-                        <li> Others: <input class="third-input" type="text"> </input class="third-input"> <i> (please specify)</i> </li>
+                        <li> Others: <input type="text" placeholder="(Please Specify)"> </input> </li>
                     </ol>
                 <li> Registered in the Philippines. </li>
                 <li> In operation for at least one year. </li>
                 <li> Sponsored by any member of the Board of Trustees. </li>
                 <li> No serious derogatory information about them supplied by reliable sources. </li>
-                </ol>
-            </p>
-        
-        <!-- associate member -->
-        <p> __________ <b> Provisional Member* </b> </p>
+            </ol>
+        </div>
+             
+        <!-- provisional member -->
+        <input type="text"> </input> 
+        <label class="role-member"> Provisional Member* </label> <br>
 
         <!-- notes -->
-        <p> We understand that an annual membership fee of P2,000 and a one-time entrance fee of P700.00 is payable on the date of approval of application. </p>
-        <p> Enclosed are our accomplished company and product forms. (Applicants for Associate Membership do not need to submit product profile forms.) </p>
-        <i> *Applicants who have been in operation for less than one (1) year, but who otherwise qualify as regular members, shall be admitted as provisional members. </i> <br>
-        
-        <p>
-            Sponsored by: Very truly yours, <br> <br> <br> <br>
-            ____________ Trustees <br>
-            ____________________ (please sign over printed name)
-        </p>
+        <div id="disclaimer"> <br>
+            <p> We understand that an annual membership fee of P2,000 and a one-time entrance fee of P700.00 is payable on the date of approval of application. </p>
+            <p> <br> Enclosed are our accomplished company and product forms. (Applicants for Associate Membership do not need to submit product profile forms.) </p>
+            <i> <br> *Applicants who have been in operation for less than one (1) year, but who otherwise qualify as regular members, shall be admitted as provisional members. </i> <br>
+        </div>
+
+        <footer>
+            <p> <br>
+                Sponsored by: Very truly yours, <br> <br>
+                <input type="text"> </input> 
+                    <label> Trustee </label>
+                <br> <input type="text"> </input> 
+                    <label>(please sign over printed name) </label>
+            </p>
+        </footer>
+
     </div>
     
     <!-- SECOND PAGE -->
@@ -87,54 +100,54 @@
             <!-- form title -->
             <h2> PG Form ME-4A</h2>
     
-            <!-- input class="third-input" company name, printed name & signature of authorized rep. -->
+            <!-- input company name, printed name & signature of authorized rep. -->
             <span style="text-align: center">
             <label> Name of Company</label> <br>
-                <input class="third-input" type="text"> <br>
+                <input type="text"> <br>
             <label> Printed name of authorized representative* </label> <br>
-                <input class="third-input" type="text"> <br>
+                <input type="text"> <br>
             <label> Signature of authorized representative </label> <br>
-                <input class="third-input" type="text"> <br>
+                <input type="text"> <br>
             <label> Date </label> <br>
-                <input class="third-input" type="date"> <br>
+                <input type="date"> <br>
             <br>
             </span>
     
             <!-- industry sector -->
             <text>
-                <b>We wish to be classified under the following industry sector:**</b> <br>
+                <b>We wish to be classified under the following industry sector:** </b> <br>
     
-                (Check only one industry category; if involved in more than one industry,
-                choose the industry sector to which you would most like to belong) <br>
+                <i> (Check only one industry category; if involved in more than one industry,
+                choose the industry sector to which you would most like to belong) </i> <br>
             </text>
                 <!-- checkboxes -->
-                    <br> <input class="third-input" type="text">
+                    <br> <input type="checkbox">
                         <label> Automotive parts and accessories </label>
-                    <br> <input class="third-input" type="text">
+                    <br> <input type="checkbox">
                         <label> Chemicals </label>
-                    <br> <input class="third-input" type="text">
+                    <br> <input type="checkbox">
                         <label> Electronics </label>
-                    <br> <input class="third-input" type="text">
+                    <br> <input type="checkbox">
                         <label> Fashion accessories fine jewelry </label>
-                    <br> <input class="third-input" type="text">
+                    <br> <input type="checkbox">
                         <label> Fresh and processed food </label>
-                    <br> <input class="third-input" type="text">
+                    <br> <input type="checkbox">
                         <label> Footwear and travelgoods </label>
-                    <br> <input class="third-input" type="text">
+                    <br> <input type="checkbox">
                         <label> Furniture </label>
-                    <br> <input class="third-input" type="text">
+                    <br> <input type="checkbox">
                         <label> Garments </label>
-                    <br> <input class="third-input" type="text">
+                    <br> <input type="checkbox">
                         <label> Gifts, toys and housewares </label>
-                    <br> <input class="third-input" type="text">
+                    <br> <input type="checkbox">
                         <label> Information technology products and services </label>
-                    <br> <input class="third-input" type="text">
+                    <br> <input type="checkbox">
                         <label> Metal manufacturers </label>
-                    <br> <input class="third-input" type="text">
+                    <br> <input type="checkbox">
                         <label> Non-metallic mineral manufactures </label>
-                    <br> <input class="third-input" type="text">
+                    <br> <input type="checkbox">
                         <label> Resource-based products (traditional and non-traditional) </label>
-                    <br> <input class="third-input" type="text">
+                    <br> <input type="checkbox">
                         <label> Textile yarns and fabrics </label>
                     <br>
             <!-- important notes -->
@@ -150,7 +163,8 @@
         </form> 
     
         <footer style="text-align: right"> <br>
-            Control No: #
+        <label> Control No: # </label>
+            <input type="number"> </input>
         </footer>
     
     </div>

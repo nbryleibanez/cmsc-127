@@ -13,18 +13,6 @@ p, h1, h2, h3, h4, h5, h6, body {
     padding: 0;
 }
 
-/* FIRST PAGE */
-
-/* SECOND PAGE */
-
-#second-page {
-    display: none;
-}
-
-#fourth-page {
-    display: none;
-}
-
 /* buttons */
 .buttons-wrapper {
     width: 60%;
