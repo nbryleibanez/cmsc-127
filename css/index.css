@@ -67,8 +67,6 @@ h1 {
     flex-direction: column;
 }
 
-
-
 .company-products {
     border: 1px solid red;
     padding: 1rem;
@@ -82,8 +80,3 @@ h1 {
     border: 1px solid green;
 }
 
-/* FOURTH PAGE */
-
-#fourth-page {
-    display: none;
-}

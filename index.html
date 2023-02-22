@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/marc.css">
 </head>
 <body>
     
@@ -429,68 +430,82 @@
     <div id="fourth-page">
         <section class="companyname">
             <div class="title"><h1>Product Sheet</h1></div>
-            <div class="caption">(Please use seperate sheet for every product group)</div>
+            <div class="caption"><h4 id="cc">(Please use seperate sheet for every product group)</h4></div>
             <label for="compName">Company Name:</label>
+            <input type="text" id="compNameNum" name="compNameNum">
+            <input type="text" id="compNameNum" name="compNameNum">
+            <input type="text" id="compNameNum" name="compNameNum">
+            <input type="text" id="compNameNum" name="compNameNum"> 
             <br />
             <input type="text" id="compName" name="compName"><br />
         </section><br />
         <section class="product">
             <label for="prodName">Product:</label>
+            <input type="text" id="prodNameNum" name="prodNameNum">
+            <input type="text" id="prodNameNum" name="prodNameNum">
+            <input type="text" id="prodNameNum" name="prodNameNum">
+            <input type="text" id="prodNameNum" name="prodNameNum"> 
+            <input type="text" id="prodNameNum" name="prodNameNum">
+            <input type="text" id="prodNameNum" name="prodNameNum">
+            <input type="text" id="prodNameNum" name="prodNameNum">
             <br />
-            <input type="text" id="prodName" name="prodName"><br />
-            <p>Product Description and Specifications:</p>
-            <label for="prodLocal">Brand Name: Local</label>
+            <input type="text" id="prodName" name="prodName"><br /><br />
+            <p style="margin-bottom: 5px;">Product Description and Specifications:</p>
+            <label for="prodLocal" id="prodLocalLabel">Brand Name: Local</label>
             <input type="text" id="prodLocal" name="prodLocal">
             <label for="prodExport">Export</label>
             <input type="text" id="prodExport" name="prodExport"><br />
+            <label for="prodTech">Technical Specifications </label>
+            <input type="text" id="prodTech" name="prodTech"><br />
+            <label for="prodFunc">Functions </label>
+            <input type="text" id="prodFunc" name="prodFunc"><br />
+            <label for="prodColors">Colors </label>
+            <input type="text" id="prodColors" name="prodColors"><br />
+            <label for="prodSizes">Sizes</label>
+            <input type="text" id="prodSizes" name="prodSizes"><br />
+            <label for="prodOthers">Packaging/Labelling/Marketing Details </label><br />
+            <input type="text" id="prodOthers" name="prodOthers"><br /><br />
         </section>
+        <br />
         <section class="description">
-            <label for="descTech">Technical Specifications </label>
-            <input type="text" id="descTech" name="descTech"><br />
-            <label for="descFunc">Functions </label>
-            <input type="text" id="descFunc" name="descFunc"><br />
-            <label for="descColors">Colors </label>
-            <input type="text" id="descColors" name="descColors"><br />
-            <label for="descSizes">Sizes</label>
-            <input type="text" id="descSizes" name="descSizes"><br />
-            <label for="descOthers">Packaging/Labelling/Marketing Details </label><br />
-            <input type="text" id="descOthers" name="descOthers"><br />
             <p>Packaging Details: (Please indicate unit used, whether piece, bottle, par, etc.)</p>
-            <label for="descUnit">Unit</label><br />
+            <label for="descUnit">Unit</label>
             <input type="text" id="descUnit" name="descUnit"><br />
-            <label for="descNet">Net weight per unit</label><br />
+            <label for="descNet">Net weight per unit</label>
             <input type="text" id="descNet" name="descNet"><br />
-            <label for="descGross">Gross weight per unit</label><br />
+            <label for="descGross">Gross weight per unit</label>
             <input type="text" id="descGross" name="descGross"><br />
-            <label for="descUnitsPP">No. of units per pack</label><br />
+            <label for="descUnitsPP">No. of units per pack</label>
             <input type="text" id="descUnitsPP" name="descUnitsPP"><br />
-            <label for="descWeightPP">Weight per pack</label><br />
+            <label for="descWeightPP">Weight per pack</label>
             <input type="text" id="descWeightPP" name="descWeightPP"><br />
-            <label for="descUnitsP20">No. of units per 20 FCL</label><br />
+            <label for="descUnitsP20">No. of units per 20 FCL</label>
             <input type="text" id="descUnitsP20" name="descUnitsP20"><br />
-            <label for="descUnitsP40">No. of units per 40 FCL</label><br />
+            <label for="descUnitsP40">No. of units per 40 FCL</label>
             <input type="text" id="descUnitsP40" name="descUnitsP40"><br />
         </section>
+        <br />
         <section class="materials">
-            <p>Major Raw Materials/Components Used: <br /> Materials Quantity Required % Domestic % Imported</p>
-            <label for="matlicense">Production Technology/Patents/PSA License:</label><br />
-            <input type="text" id="matlicense" name="matlicense"><br />
+            <p>Major Raw Materials/Components Used: <br /> Materials Quantity Required % Domestic % Imported</p><br />
+            <label for="matLicense">Production Technology/Patents/PSA License:</label><br />
+            <input type="text" id="matLicense" name="matLicense"><br /><br />
             <label for="matTSkills">Technical Skills Available</label><br />
             <input type="text" id="matTSkills" name="matTSkills"><br />
         </section>
+        <br />
         <section class="sales">
-            <p>Availablity of Sales Aides (Please enclose available sales aide)</p>
-            <label for="matlicense">Production Technology/Patents/PSA License:</label><br />
-            <input type="text" id="matlicense" name="matlicense"><br />
-            <label for="matTSkills">Technical Skills Available</label><br />
-            <input type="text" id="matTSkills" name="matTSkills"><br />
-
-            <input type="checkbox" id="cPhotos" name="cPhotos" value="">
-            <label for="cPhotos">Sample [] Photos</label><br>
-            <input type="checkbox" id="cCatalogues" name="cCatalogues" value="">
-            <label for="cCatalogues">Catalogues [] Price List</label><br>
-            <input type="checkbox" id="cOthers" name="cOthers" value="">
-            <label for="cOthers">Others</label>
+            <p>Availablity of Sales Aids (Please enclose available sales aid)</p><br />
+            <input type="text" id="cOthers" name="cPhotos1">
+            <label for="cPhotos1">Sample</label>
+            <input type="text" id="cOthers1" name="cPhotos2">
+            <label for="cCatalogues1"></label> Photos</label><br>
+            <input type="text" id="cOthers" name="cCatalogues1">
+            <label for="cCatalogues">Catalogues</label>
+            <input type="text" id="cOthers1" name="cCatalogues2">
+            <label for="cCatalogues">Price List</label><br>
+            <input type="text" id="cOthers" name="cFinalOthers1">
+            <label for="cFinalOthers">Others (please specify)</label>
+            <input type="text" id="cOthers2" name="cFinalOthers2">
         </section>
     </div>
     <button id="prev">PREVIOUS</button>

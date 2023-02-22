@@ -1,0 +1,49 @@
+/* FOURTH PAGE */
+
+section {
+    border-bottom: 3px double black;
+    padding: 0 0 20px 0;
+}
+
+#fourth-page {
+    display: none;   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 3rem;
+    display: none;
+}
+
+#compNameNum, #prodNameNum, #cOthers, #cOthers1 {
+    width: 10px;
+}
+
+#cOthers {
+    margin-left: 20%;
+}
+
+#compName, #prodName, #matLicense, #matTSkills {
+    width: 95%;
+    margin-left: 5%;
+}
+
+#cc {
+    margin-top: -15px;
+    text-align: center;
+}
+
+#prodLocal, #prodExport {
+    width: 30%;
+}
+
+#prodLocalLabel {
+    margin-left: 5%;
+}
+
+#fourth-page input{
+    margin-bottom: 5px;
+}
+
+/*#descTech, #descFunc, #descColors, #descSizes, #descOthers*/
